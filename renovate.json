@@ -6,7 +6,7 @@
         "customType": "regex",
         "description": "Update rabbitmq-delayed-message-exchange version",
         "fileMatch": ["Dockerfile"],
-        "matchStrings": ["https:\\/\\/github\\.com\\/rabbitmq\\/rabbitmq-delayed-message-exchange\\/releases\\/download\\/v(?<currentValue>[0-9.]+)\\/rabbitmq_delayed_message_exchange-\\k<currentValue>\\.ez"],
+        "matchStrings": ["https:\\\/\\\/github\\.com\\\/rabbitmq\\\/rabbitmq-delayed-message-exchange\\\/releases\\\/download\\\/v(?<currentValue>[0-9.]+)\\\/rabbitmq_delayed_message_exchange-\\k<currentValue>\\.ez"],
         "datasourceTemplate": "github-releases",
         "depNameTemplate": "rabbitmq/rabbitmq-delayed-message-exchange",
         "versioningTemplate": "regex:^?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
